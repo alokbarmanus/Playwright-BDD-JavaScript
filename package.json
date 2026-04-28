@@ -1,0 +1,24 @@
+{
+  "name": "playwright-bdd-javascript",
+  "version": "1.0.0",
+  "description": "Playwright BDD framework with POM, hooks, and data-driven testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require-module @babel/register --require ./tests/step-definitions/**/*.js --require ./utils/hooks.js ./tests/features/**/*.feature --format json:reports/cucumber_report.json || true",
+    "report": "node utils/generate-html-report.js && node utils/generate-advanced-html-report.js",
+    "test:all": "npm test",
+    "posttest": "npm run report"
+  },
+  "author": "Alok Barman",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.0.0",
+    "@playwright/test": "^1.40.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.28.6",
+    "cucumber-html-reporter": "^7.2.0",
+    "multiple-cucumber-html-reporter": "^3.10.0"
+  }
+}

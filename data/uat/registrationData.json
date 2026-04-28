@@ -1,0 +1,15 @@
+[
+    {
+        "username": "Admin",
+        "password": "admin123",
+        "email": "alokbarman@aol.com",
+        "address": {
+            "street": "3 Marshall St",
+            "apartment": "Apt 8B",
+            "city": "Irvington",
+            "state": "NJ",
+            "zip": "07111"
+        },
+        "mobile": "123-456-7890"
+    }
+]
